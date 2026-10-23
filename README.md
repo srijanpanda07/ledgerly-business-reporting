@@ -1,5 +1,7 @@
 # Ledgerly — Business Report Automator
 
+[Live demo](https://ledgerly-sales-reporting.streamlit.app/) · [Source code](https://github.com/srijanpanda07/ledgerly-business-reporting)
+
 Ledgerly turns a sales CSV or Excel workbook into an interactive overview, data-quality review, and shareable Excel or PDF report. The interface uses a quiet sage, charcoal, and warm-neutral palette designed for readable business reporting.
 
 ## What it does
@@ -15,20 +17,15 @@ Ledgerly turns a sales CSV or Excel workbook into an interactive overview, data-
 
 In PowerShell from the project folder:
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m streamlit run app.py
-```
+    py -m venv .venv
+    .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+    .\.venv\Scripts\python.exe -m streamlit run app.py
 
-The app opens at `http://localhost:8501`.
+The app opens at http://localhost:8501.
 
 ## Deploy to Streamlit Community Cloud
 
-1. Push the project files to a GitHub repository. Keep `app.py`, `report_utils.py`, `pdf_export.py`, `requirements.txt`, and `sample_sales.csv` together at the repository root.
-2. Connect that GitHub account at [Streamlit Community Cloud](https://share.streamlit.io/).
-3. Create an app using the repository, its deployment branch, and `app.py` as the entry point.
-4. Choose the app URL and visibility in the deployment settings.
+The public demo is running at [ledgerly-sales-reporting.streamlit.app](https://ledgerly-sales-reporting.streamlit.app/). The source repository is connected to Streamlit Community Cloud, which redeploys changes pushed to the main branch.
 
 The app does not require API keys or secrets. A public deployment lets visitors upload files to the running app, so use fictional or anonymised data. Uploaded files are processed by the app; this project has no login, database, or private report storage.
 
