@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+
+# Local/editor files
+.vscode/
+.DS_Store
+Thumbs.db
